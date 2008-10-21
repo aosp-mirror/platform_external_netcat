@@ -63,8 +63,12 @@
 #include <sys/time.h>		/* timeval, time_t */
 #include <setjmp.h>		/* jmp_buf et al */
 #include <sys/socket.h>		/* basics, SO_ and AF_ defs, sockaddr, ... */
+
 #include <netinet/in.h>		/* sockaddr_in, htons, in_addr */
+
+#if 0
 #include <netinet/in_systm.h>	/* misc crud that netinet/ip.h references */
+#endif
 #include <netinet/ip.h>		/* IPOPT_LSRR, header stuff */
 #include <netdb.h>		/* hostent, gethostby*, getservby* */
 #include <arpa/inet.h>		/* inet_ntoa */
