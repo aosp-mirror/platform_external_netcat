@@ -952,7 +952,7 @@ dol_err:
    Use the time delay between writes if given, otherwise use the "tcp ping"
    trick for getting the RTT.  [I got that idea from pluvius, and warped it.]
    Return either the original fd, or clean up and return -1. */
-udptest (fd, where)
+int udptest (fd, where)
   int fd;
   IA * where;
 {
@@ -1300,7 +1300,7 @@ Debug (("wrote %d to net, errno %d", rr, errno))
 
 /* main :
    now we pull it all together... */
-main (argc, argv)
+int main (argc, argv)
   int argc;
   char ** argv;
 {
