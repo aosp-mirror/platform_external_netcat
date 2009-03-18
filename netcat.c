@@ -30,10 +30,14 @@
 
 /* conditional includes -- a very messy section which you may have to dink
    for your own architecture [and please send diffs...]: */
-/* #undef _POSIX_SOURCE		/* might need this for something? */
+#if 0
+#undef _POSIX_SOURCE		/* might need this for something? */
+#endif
 #define HAVE_BIND		/* ASSUMPTION -- seems to work everywhere! */
 #define HAVE_HELP		/* undefine if you dont want the help text */
-/* #define ANAL			/* if you want case-sensitive DNS matching */
+#if 0
+#define ANAL			/* if you want case-sensitive DNS matching */
+#endif
 
 #ifdef HAVE_STDLIB_H
 #include <stdlib.h>
@@ -948,7 +952,7 @@ dol_err:
    Use the time delay between writes if given, otherwise use the "tcp ping"
    trick for getting the RTT.  [I got that idea from pluvius, and warped it.]
    Return either the original fd, or clean up and return -1. */
-udptest (fd, where)
+int udptest (fd, where)
   int fd;
   IA * where;
 {
@@ -1296,7 +1300,7 @@ Debug (("wrote %d to net, errno %d", rr, errno))
 
 /* main :
    now we pull it all together... */
-main (argc, argv)
+int main (argc, argv)
   int argc;
   char ** argv;
 {
@@ -1631,6 +1635,7 @@ Debug (("netfd %d from port %d to port %d", netfd, ourport, curport))
 #ifdef HAVE_HELP		/* unless we wanna be *really* cryptic */
 /* helpme :
    the obvious */
+void
 helpme()
 {
   o_verbose = 1;
