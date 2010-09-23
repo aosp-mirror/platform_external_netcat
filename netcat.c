@@ -33,7 +33,9 @@
 #if 0
 #undef _POSIX_SOURCE		/* might need this for something? */
 #endif
+#if !defined(ANDROID)
 #define HAVE_BIND		/* ASSUMPTION -- seems to work everywhere! */
+#endif
 #define HAVE_HELP		/* undefine if you dont want the help text */
 #if 0
 #define ANAL			/* if you want case-sensitive DNS matching */
