@@ -1,0 +1,7 @@
+Code-Review+2: Nick Kralevich <nnk@google.com>
+Verified+1: Elliott Hughes <enh@google.com>
+Submitted-by: Elliott Hughes <enh@google.com>
+Submitted-at: Mon, 30 Mar 2015 19:08:35 +0000
+Reviewed-on: https://android-review.googlesource.com/144321
+Project: platform/external/netcat
+Branch: refs/heads/master
