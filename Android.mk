@@ -6,7 +6,13 @@ LOCAL_SRC_FILES:=\
 	atomicio.c
 
 
-LOCAL_CFLAGS:=-O2 -g
+LOCAL_CFLAGS:= \
+    -O2 -g \
+    -Wall -Werror \
+    -Wno-deprecated-declarations \
+    -Wno-sign-compare \
+    -Wno-unused-variable \
+
 #LOCAL_CFLAGS+=-DLINUX
 
 LOCAL_MODULE_TAGS := eng
