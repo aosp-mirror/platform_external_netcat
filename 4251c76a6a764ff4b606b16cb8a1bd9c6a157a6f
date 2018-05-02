@@ -1,0 +1,9 @@
+Verified+1: Elliott Hughes <enh@google.com>
+Autosubmit+1: Elliott Hughes <enh@google.com>
+Code-Review+2: Tom Cherry <tomcherry@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: android-build-prod (mdb) <android-build-team-robot@google.com>
+Submitted-at: Wed, 02 May 2018 18:54:50 +0000
+Reviewed-on: https://android-review.googlesource.com/674974
+Project: platform/external/netcat
+Branch: refs/heads/master
